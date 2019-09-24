@@ -29,9 +29,9 @@ class Shop
   end
 
   def discount_calc
-    d = (20 * (@discount_a / 3)) + (15 * (@discount_b / 2))
+    discounts_total = (20 * (@discount_a / 3)) + (15 * (@discount_b / 2))
     reset_discounts
-    d
+    discounts_total
   end
 
   def invalid_check(list)
